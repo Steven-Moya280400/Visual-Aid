@@ -11,7 +11,7 @@
     height: 100vh;
     width: 100%;
     background: rgb(24,27,27);
-    background: linear-gradient(180deg, rgba(24,27,27,1) 38%, rgba(24,27,27,0) 50%, rgba(24,27,27,0) 50%, rgba(24,27,27,1) 62%);
+    background: linear-gradient(180deg, rgba(24,27,27,1) 39%, rgba(24,27,27,0) 50%, rgba(24,27,27,0) 50%, rgba(24,27,27,1) 61%);
     pointer-events: none;
     z-index: 10;
 }
