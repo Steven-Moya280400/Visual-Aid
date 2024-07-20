@@ -1,42 +1,22 @@
 let startX, startY, endX, endY, pos = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-    const swipeMenu = document.getElementById('swipeMenu');
+    const swipeMenu = document.querySelector('#swipeMenu .menu');
 
-    swipeMenu.addEventListener('touchstart', function (e) {
-        const touch = e.touches[0];
-        startX = touch.clientX;
-        startY = touch.clientY;
-    });
-
-    swipeMenu.addEventListener('touchmove', function (e) {
-        const touch = e.touches[0];
-        endX = touch.clientX;
-        endY = touch.clientY;
-    });
-
-    swipeMenu.addEventListener('touchend', function (e) {
-        const deltaX = endX - startX;
-        const deltaY = endY - startY;
-
-        if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            if (deltaX > 0) {
+    carruselSwipe(swipeMenu, function (swipedir) {
+        if (swipedir != 'none') {
+            if (swipedir == 'right' || swipedir == 'up') {
                 moveMenu('down')
-            } else {
-                moveMenu('up')
             }
-        } else {
-            if (deltaY > 0) {
+            else if (swipedir == 'left' || swipedir == 'down') {
                 moveMenu('up')
-            } else {
-                moveMenu('down')
             }
         }
     });
 });
 
 function moveMenu(dir) {
-    const swipeMenu = document.getElementById('swipeMenu');
+    const swipeMenu = document.querySelector('#swipeMenu .menu');
 
     if (dir == 'up') {
         pos = pos + 77;
@@ -47,10 +27,59 @@ function moveMenu(dir) {
 
     let item = swipeMenu.querySelector('[data-position="' + pos + '"]')
 
-    if (item != null && item != undefined) {
-        swipeMenu.querySelector('.menuItem.active').classList.remove('active');
-        swipeMenu.style.top = pos + 'px';
-        item.classList.add('active');
+    if (item == null || item == undefined) {
+        if (dir == 'up') {
+            pos = parseInt(swipeMenu.dataset.max);
+        }
+        else {
+            pos = parseInt(swipeMenu.dataset.min);
+        }
+
+        item = swipeMenu.querySelector('[data-position="' + pos + '"]')
     }
 
+    swipeMenu.querySelector('.menuItem.active').classList.remove('active');
+    swipeMenu.style.top = pos + 'px';
+    item.classList.add('active');
+
+}
+
+function carruselSwipe(el, callback) {
+    var touchsurface = el,
+        swipedir,
+        startX,
+        startY,
+        distX,
+        distY,
+        threshold = 150,
+        restraint = 100,
+        allowedTime = 300,
+        elapsedTime,
+        startTime,
+        handleswipe = callback || function (swipedir) { }
+
+    touchsurface.addEventListener('touchstart', function (e) {
+        var touchobj = e.changedTouches[0]
+        swipedir = 'none'
+        dist = 0
+        startX = touchobj.pageX
+        startY = touchobj.pageY
+        startTime = new Date().getTime()
+    }, false)
+
+    touchsurface.addEventListener('touchend', function (e) {
+        var touchobj = e.changedTouches[0]
+        distX = touchobj.pageX - startX
+        distY = touchobj.pageY - startY
+        elapsedTime = new Date().getTime() - startTime
+        if (elapsedTime <= allowedTime) {
+            if (Math.abs(distX) >= threshold && Math.abs(distY) <= restraint) {
+                swipedir = (distX < 0) ? 'left' : 'right'
+            }
+            else if (Math.abs(distY) >= threshold && Math.abs(distX) <= restraint) {
+                swipedir = (distY < 0) ? 'up' : 'down'
+            }
+        }
+        handleswipe(swipedir)
+    }, false)
 }
