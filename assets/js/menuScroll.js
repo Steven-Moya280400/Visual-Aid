@@ -13,6 +13,24 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
     });
+
+    swipeMenu.addEventListener('touchstart', function (event) {
+        if (event.touches.length > 1) return;
+        let startY = event.touches[0].clientY;
+
+        const onTouchMove = function (event) {
+            let moveY = event.touches[0].clientY;
+            if (moveY > startY) {
+                event.preventDefault();
+            }
+        };
+
+        swipeMenu.addEventListener('touchmove', onTouchMove, { passive: false });
+
+        swipeMenu.addEventListener('touchend', function () {
+            swipeMenu.removeEventListener('touchmove', onTouchMove);
+        }, { once: true });
+    });
 });
 
 function moveMenu(dir) {
@@ -51,7 +69,7 @@ function carruselSwipe(el, callback) {
         startY,
         distX,
         distY,
-        threshold = 150,
+        threshold = 65,
         restraint = 100,
         allowedTime = 300,
         elapsedTime,
