@@ -1,10 +1,10 @@
-:root{
-    --black:#181B1B;
+:root {
+    --black: #181B1B;
     --white: #fff;
     --primary: #00FFF0;
 }
 
-*{
+* {
     font-family: "Lexend", sans-serif;
     vertical-align: baseline;
     text-decoration: none;
@@ -15,8 +15,44 @@
     transition: 0.3s;
 }
 
-body{
+.container {
+    padding: 0 42px;
+}
+
+body {
     background-color: var(--black);
     margin: 0;
     padding: 0;
+}
+
+.aa{
+color: #00FFF0;
+}
+
+footer {
+    padding: 8px 0 50px 0;
+    background-color: #3a3a3a03;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0px 0px 13px #00fff033;
+}
+
+footer .navFooter {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+footer .navFooter .navItem a {
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 11.77px;
 }
