@@ -25,27 +25,112 @@ body {
     padding: 0;
 }
 
-.aa{
-color: #00FFF0;
+.aa {
+    color: #00FFF0;
+}
+
+header{
+    position: fixed;
+    width: calc(100% + 10px);
+    left: -5px;
+    right: -5px;
+    backdrop-filter: blur(10px);
+    box-shadow: inset 0px 0px 13px #00fff033;
+    padding: 0 5px;
+}
+
+header .headerContent .title {
+    color: var(--primary);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+header .headerContent {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header .headerContent .navHeader .navList{
+    display: inline-flex;
+    width: 100%;
+    gap: 33px;
+    list-style: none;
+    padding: 0;
+}
+
+main{
+    padding: 88px 0 140px ;
+}
+
+.os-scrollbar.os-scrollbar-vertical {
+    padding: 88px 10px 140px 10px !important;
+    box-sizing: content-box;
+    width: 8px;
+
+    .os-scrollbar-handle {
+        background-color: var(--primary) !important;
+    }
 }
 
 footer {
-    padding: 8px 0 50px 0;
+    padding: 8px 5px 36px 5px;
     background-color: #3a3a3a03;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: -10px;
+    width: calc(100% + 10px);
+    left: -5px;
+    right: -5px;
     backdrop-filter: blur(10px);
     box-shadow: inset 0px 0px 13px #00fff033;
 }
 
 footer .navFooter {
+    position: relative;
+}
+
+footer .navFooter .navList {
     display: inline-flex;
     justify-content: space-around;
     align-items: flex-end;
     list-style: none;
     padding: 0;
     width: 100%;
+    margin: 0;
+}
+
+footer .activeEffect {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(0, 255, 240, 0) 0%, rgba(0, 255, 240, 1) 32%, rgba(0, 255, 240, 1) 68%, rgba(0, 255, 240, 0) 100%);
+    height: 100%;
+    width: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.2;
+    pointer-events: none;
+    filter: blur(10px);
+}
+
+footer .navFooter .navItem {
+    min-width: 80px;
+}
+
+footer .navFooter .navItem .profilo-icon {
+    height: 31px;
+    width: 28px;
+    object-fit: contain;
+}
+
+footer .navFooter .navItem .aiuta-Icon {
+    height: 42px;
+    width: 38px;
+    object-fit: contain;
+}
+
+footer .navFooter .navItem .impostazioni-Icon {
+    height: 33px;
+    width: 33px;
+    object-fit: contain;
 }
 
 footer .navFooter .navItem a {
@@ -55,4 +140,5 @@ footer .navFooter .navItem a {
     display: flex;
     flex-direction: column;
     gap: 11.77px;
+    align-items: center;
 }
