@@ -1,0 +1,42 @@
+.aiutati .lstUser .user {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 31px 11px 0;
+    border-bottom: 1px solid var(--primary);
+    position: relative;
+}
+
+.aiutati .lstUser .user .gradiant {
+    position: absolute;
+    width: 170px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(170deg, rgba(0, 255, 240, 0) 68%, rgb(0 255 240 / 34%) 100%);
+    bottom: 0;
+    right: 0;
+}
+
+.aiutati .lstUser .user .name {
+    color: var(--primary);
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.aiutati .lstUser .user .date {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.aiutati .lstUser .user .actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.aiutati .lstUser .user .actions button {
+    padding: 0;
+    border: none;
+    background-color: #0000;
+}

@@ -13,6 +13,7 @@
     box-sizing: border-box;
     flex-shrink: 1;
     transition: 0.3s;
+    margin: 0;
 }
 
 .container {
@@ -25,18 +26,15 @@ body {
     padding: 0;
 }
 
-.aa {
-    color: #00FFF0;
-}
-
 header{
     position: fixed;
     width: calc(100% + 10px);
     left: -5px;
     right: -5px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     box-shadow: inset 0px 0px 13px #00fff033;
-    padding: 0 5px;
+    padding: 21px 5px;
+    z-index: 100;
 }
 
 header .headerContent .title {
@@ -81,8 +79,9 @@ footer {
     width: calc(100% + 10px);
     left: -5px;
     right: -5px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     box-shadow: inset 0px 0px 13px #00fff033;
+    z-index: 100;
 }
 
 footer .navFooter {
@@ -134,11 +133,15 @@ footer .navFooter .navItem .impostazioni-Icon {
 }
 
 footer .navFooter .navItem a {
-    color: var(--white);
+    color: #939393;
     font-size: 12px;
     font-weight: 400;
     display: flex;
     flex-direction: column;
     gap: 11.77px;
     align-items: center;
+}
+
+footer .navFooter .navItem.active a {
+    color: var(--white);
 }
