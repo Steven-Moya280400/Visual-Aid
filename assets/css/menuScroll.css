@@ -1,3 +1,7 @@
+main{
+    padding: 0;
+}
+
 .menuScroll{
     display: flex;
     height: 100vh;
