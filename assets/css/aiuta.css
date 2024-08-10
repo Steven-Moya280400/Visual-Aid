@@ -1,3 +1,22 @@
+.aiutati .titleContainer {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.aiutati .titleContainer .title {
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.aiutati .titleContainer .configAiutati{
+    border: none;
+    background-color: #0000;
+    padding: 0;
+}
+
 .aiutati .lstUser .user {
     display: inline-flex;
     justify-content: space-between;

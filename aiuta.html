@@ -13,6 +13,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
         <link href="assets/css/aiuta.css" rel="stylesheet">
+        <link href="assets/css/sono.css" rel="stylesheet">
+        <link href="assets/css/preferiti.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/plugins/overlayscrollbars/styles/overlayscrollbars.min.css">
     </head>
 </head>
@@ -26,12 +28,12 @@
                     <ul class="navList">
                         <li class="navItem">
                             <a href="#">
-                                <img src="assets/img/header/chatIcon.svg" />
+                                <img src="assets/img/icons/chatIcon.svg" />
                             </a>
                         </li>
                         <li class="navItem">
                             <a href="#">
-                                <img src="assets/img/header/plusIcon.svg" />
+                                <img src="assets/img/icons/plusIcon.svg" />
                             </a>
                         </li>
                     </ul>
@@ -42,7 +44,99 @@
     <main>
         <div class="mainContent">
             <div class="container">
+                <section class="sono">
+                    <div class="sonoContent">
+                        <p class="sonoDisponible">Sono disponible</p>
+                        <div class="switch active" onclick="enableSono();" id="switchSono">
+                            <span class="no">No</span>
+                            <span class="si">Si</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="Preferiti">
+                    <div class="titlePreferitiContainer">
+                        <p class="titlePreferiti">Preferiti</p>
+                        <img src="assets/img/icons/starIconFill.svg" />
+                    </div>
+
+                    <div class="lstUtenti">
+                        <div class="utenti blu" id="utenti_samuel" onclick="openUtenti('utenti_samuel')">
+                            <button class="visualAidPlus">
+                                VisualAid+
+                            </button>
+                            <img class="imgUtenti" src="assets/img/utenti/samuel.png" />
+                            <div class="infoUtenti">
+                                <p class="nameUtenti">Samuel</p>
+                                <p class="posizioneUtenti">In cucina</p>
+                                <p class="titleInfo">INFO:</p>
+                                <p class="info">Samuel è cieco al 94%, ha una allergia molto forte alle noccioline.</p>
+                                <div class="actions">
+                                    <button class="action">
+                                        <img src="assets/img/icons/phoneBlu.svg">
+                                    </button>
+                                    <button class="action">
+                                        <img src="assets/img/icons/videoBlu.svg">
+                                    </button>
+                                    <button class="action">
+                                        <img src="assets/img/icons/noteBlu.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="utenti giallo" id="utenti_caterina" onclick="openUtenti('utenti_caterina')">
+                            <img class="imgUtenti" src="assets/img/utenti/caterina.png" />
+                            <div class="infoUtenti">
+                                <p class="nameUtenti">Caterina</p>
+                                <p class="titleInfo">INFO:</p>
+                                <p class="info">Caterina è ipovedente medio-grave, non soffre di alcuna allergia in
+                                    particolare.</p>
+                                    <div class="actions">
+                                        <button class="action">
+                                            <img src="assets/img/icons/micGiallo.svg">
+                                        </button>
+                                        <button class="action">
+                                            <img src="assets/img/icons/noteGiallo.svg">
+                                        </button>
+                                    </div>
+                            </div>
+                        </div>
+
+                        <div class="utenti arancia" id="utenti_karl" onclick="openUtenti('utenti_karl')">
+                            <button class="visualAidPlus">
+                                VisualAid+
+                            </button>
+                            <img class="imgUtenti" src="assets/img/utenti/karl.png" />
+                            <div class="infoUtenti">
+                                <p class="nameUtenti">Karl</p>
+                                <p class="posizioneUtenti">In salotto</p>
+                                <p class="titleInfo">INFO:</p>
+                                <p class="info">Karl ha una lesione al chiasma ottico, ha un campo visivo molto ridotto</p>
+                                <div class="actions">
+                                    <button class="action">
+                                        <img src="assets/img/icons/phoneArancia.svg">
+                                    </button>
+                                    <button class="action">
+                                        <img src="assets/img/icons/videoArancia.svg">
+                                    </button>
+                                    <button class="action">
+                                        <img src="assets/img/icons/noteArancia.svg">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <section class="aiutati">
+                    <div class="titleContainer">
+                        <p class="title">Aiutati</p>
+                        <button class="configAiutati">
+                            <img src="assets/img/icons/configIcon.svg" />
+                        </button>
+                    </div>
+
                     <div class="lstUser">
                         <div class="user">
                             <div class="info">
@@ -51,10 +145,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -66,10 +160,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -81,10 +175,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -96,10 +190,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -111,10 +205,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -126,10 +220,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -141,10 +235,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -156,10 +250,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -171,10 +265,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -186,10 +280,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -201,10 +295,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -216,10 +310,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -231,10 +325,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -246,10 +340,10 @@
                             </div>
                             <div class="actions">
                                 <button class="btnFavorite">
-                                    <img src="assets/img/aiuta/starIcon.svg" />
+                                    <img src="assets/img/icons/starIcon.svg" />
                                 </button>
                                 <button class="btnFlag">
-                                    <img src="assets/img/aiuta/flagIcon.svg" />
+                                    <img src="assets/img/icons/flagIcon.svg" />
                                 </button>
                             </div>
                             <div class="gradiant"></div>
@@ -304,4 +398,30 @@
             (el) => OverlayScrollbars(el, {})
         );
     });
+
+    function openUtenti(id) {
+        if (document.getElementById(id).classList.contains('active')) {
+            document.getElementById(id).classList.remove('active');
+        }
+        else {
+            let lstUtenti = document.querySelectorAll('.utenti');
+
+            for (var i = 0; i < lstUtenti.length; i++) {
+                lstUtenti[i].classList.remove('active');
+            }
+
+            document.getElementById(id).classList.add('active');
+        }
+    }
+
+    function enableSono() {
+        var switchSono = document.getElementById('switchSono');
+
+        if (switchSono.classList.contains('active')) {
+            switchSono.classList.remove('active');
+        }
+        else {
+            switchSono.classList.add('active');
+        }
+    }
 </script>

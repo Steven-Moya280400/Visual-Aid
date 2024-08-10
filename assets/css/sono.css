@@ -1,0 +1,53 @@
+.sono .sonoDisponible{
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.sono .sonoContent{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sono .switch{
+    max-width: 71.54px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    height: 26px;
+    cursor: pointer;
+}
+
+.sono .switch span{
+    padding: 0 4px;
+    background-color: #575757;
+}
+
+.sono .switch .no{
+    background-color: #FF5C00;
+    box-shadow: 0px 0px 4px 0px #ff5c00;
+    border-radius: 10px 0 0 10px;
+}
+
+.sono .switch .si{
+    background-color: #575757;
+    border-radius: 0 10px 10px 0;
+    opacity: 0.4;
+}
+
+.sono .switch.active .no{
+    background-color: #575757;
+    box-shadow: none;
+    opacity: 0.4;
+}
+
+.sono .switch.active .si{
+    background-color: #00FFF0;
+    box-shadow: 0px 0px 4px 0px #00FFF0;
+    opacity: 1;
+}
