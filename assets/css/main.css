@@ -18,6 +18,8 @@
 
 .container {
     padding: 0 42px;
+    max-width: 428px;
+    margin: 0 auto;
 }
 
 body {
@@ -26,7 +28,7 @@ body {
     padding: 0;
 }
 
-header{
+header {
     position: fixed;
     width: calc(100% + 10px);
     left: -5px;
@@ -49,7 +51,7 @@ header .headerContent {
     width: 100%;
 }
 
-header .headerContent .navHeader .navList{
+header .headerContent .navHeader .navList {
     display: inline-flex;
     width: 100%;
     gap: 33px;
@@ -57,8 +59,8 @@ header .headerContent .navHeader .navList{
     padding: 0;
 }
 
-main{
-    padding: 88px 0 140px ;
+main {
+    padding: 88px 0 140px;
 }
 
 .os-scrollbar.os-scrollbar-vertical {
@@ -72,10 +74,9 @@ main{
 }
 
 footer {
-    padding: 8px 5px 36px 5px;
     background-color: #3a3a3a03;
     position: fixed;
-    bottom: -10px;
+    bottom: -11px;
     width: calc(100% + 10px);
     left: -5px;
     right: -5px;
@@ -84,11 +85,16 @@ footer {
     z-index: 100;
 }
 
-footer .navFooter {
+footer .contentFooter {
+    padding: 8px 5px 36px 5px;
     position: relative;
 }
 
-footer .navFooter .navList {
+footer .contentFooter .navFooter {
+    position: relative;
+}
+
+footer .contentFooter .navFooter .navList {
     display: inline-flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -98,7 +104,7 @@ footer .navFooter .navList {
     margin: 0;
 }
 
-footer .activeEffect {
+footer .contentFooter .activeEffect {
     position: absolute;
     background: linear-gradient(90deg, rgba(0, 255, 240, 0) 0%, rgba(0, 255, 240, 1) 32%, rgba(0, 255, 240, 1) 68%, rgba(0, 255, 240, 0) 100%);
     height: 100%;
@@ -110,29 +116,34 @@ footer .activeEffect {
     filter: blur(10px);
 }
 
-footer .navFooter .navItem {
+footer .contentFooter .activeEffect.left {
+    left: 0%;
+    transform: translateX(0%);
+}
+
+footer .contentFooter .navFooter .navItem {
     min-width: 80px;
 }
 
-footer .navFooter .navItem .profilo-icon {
+footer .contentFooter .navFooter .navItem .profilo-icon {
     height: 31px;
     width: 28px;
     object-fit: contain;
 }
 
-footer .navFooter .navItem .aiuta-Icon {
+footer .contentFooter .navFooter .navItem .aiuta-Icon {
     height: 42px;
     width: 38px;
     object-fit: contain;
 }
 
-footer .navFooter .navItem .impostazioni-Icon {
+footer .contentFooter .navFooter .navItem .impostazioni-Icon {
     height: 33px;
     width: 33px;
     object-fit: contain;
 }
 
-footer .navFooter .navItem a {
+footer .contentFooter .navFooter .navItem a {
     color: #939393;
     font-size: 12px;
     font-weight: 400;
@@ -142,6 +153,6 @@ footer .navFooter .navItem a {
     align-items: center;
 }
 
-footer .navFooter .navItem.active a {
+footer .contentFooter .navFooter .navItem.active a {
     color: var(--white);
 }
