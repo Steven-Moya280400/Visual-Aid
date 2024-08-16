@@ -121,6 +121,11 @@ footer .contentFooter .activeEffect.left {
     transform: translateX(0%);
 }
 
+footer .contentFooter .activeEffect.right {
+    left: 100%;
+    transform: translateX(-100%);
+}
+
 footer .contentFooter .navFooter .navItem {
     min-width: 80px;
 }

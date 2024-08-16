@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <Title>Visual Aid</Title>
+        <link rel="icon" type="image/png" href="assets/img/logo.png" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/impostazioni.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/plugins/overlayscrollbars/styles/overlayscrollbars.min.css">
+    </head>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="headerContent">
+                <p class="title">Impostazioni</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainContent">
+            <div class="container">
+                <section class="impostazioni">
+                    <button class="passaVisualAid">Scopri e passa a VisualAid+</button>
+
+                    <div class="sezione">
+                        <p class="titolo">Account e Profilo</p>
+                        <div class="lstOpzione">
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/password.svg" />
+                                <span class="testo">Password</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/privacy.svg" />
+                                <span class="testo">Privacy e visibilità</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/notifiche.svg" />
+                                <span class="testo">Notifiche e suoni</span>
+                            </a>
+                            <a class="opzione rosso" href="#">
+                                <img class="icon" src="assets/img/impostazioni/cancellaAccount.svg" />
+                                <span class="testo">Cancella account</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sezione">
+                        <p class="titolo">Media e Archiviazione</p>
+                        <div class="lstOpzione">
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/media.svg" />
+                                <span class="testo">Gestisci Media</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/chiamate.svg" />
+                                <span class="testo">Registrazioni chiamate</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/backup.svg" />
+                                <span class="testo">Backup chat</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sezione">
+                        <p class="titolo">Accessabilità</p>
+                        <div class="lstOpzione">
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/testo.svg" />
+                                <span class="testo">Testo</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/sfondo.svg" />
+                                <span class="testo">Sfondo</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/aspetto.svg" />
+                                <span class="testo">Aspetto</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sezione">
+                        <p class="titolo">Altro</p>
+                        <div class="lstOpzione">
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/lingua.svg" />
+                                <span class="testo">Lingua</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/sfondo.svg" />
+                                <span class="testo">Sfondo</span>
+                            </a>
+                            <a class="opzione" href="#">
+                                <img class="icon" src="assets/img/impostazioni/aspetto.svg" />
+                                <span class="testo">Aspetto</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="contentFooter">
+                <div class="activeEffect right"></div>
+                <nav class="navFooter">
+                    <ul class="navList">
+                        <li class="navItem">
+                            <a href="profilo.html">
+                                <img class="profilo-icon" src="assets/img/footer/profilo.svg" />
+                                <span>Profilo</span>
+                            </a>
+                        </li>
+                        <li class="navItem">
+                            <a href="aiuta.html">
+                                <img class="aiuta-Icon" src="assets/img/footer/aiuta.svg" />
+                                <span>Aiuta</span>
+                            </a>
+                        </li>
+                        <li class="navItem active">
+                            <a href="impostazioni.html">
+                                <img class="impostazioni-Icon" src="assets/img/footer/impostazioniActive.svg" />
+                                <span>Impostazioni</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src="assets/plugins/overlayscrollbars/browser/overlayscrollbars.browser.es5.min.js"></script>
+<script>
+    var {
+        OverlayScrollbars,
+        ScrollbarsHidingPlugin,
+        SizeObserverPlugin,
+        ClickScrollPlugin
+    } = OverlayScrollbarsGlobal;
+
+    document.addEventListener("DOMContentLoaded", () => {
+        Array.prototype.forEach.call(
+            document.querySelectorAll('body'),
+            (el) => OverlayScrollbars(el, {})
+        );
+    });
+</script>

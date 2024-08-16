@@ -1,0 +1,55 @@
+.impostazioni .passaVisualAid {
+    color: var(--primary);
+    background-color: #232323;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 15px;
+    padding: 10px 12px;
+    border: none;
+    box-shadow: inset 0.5px 1px 3px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.impostazioni .sezione .titolo {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 5.5px;
+}
+
+.impostazioni .sezione .lstOpzione{
+    background-color: #232323;
+    border-radius: 15px;
+    padding: 10px 0 12px 24px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.impostazioni .sezione .lstOpzione .opzione{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    gap: 22px;
+}
+
+.impostazioni .sezione .lstOpzione .opzione .icon{
+    width: 18px;
+    height: auto;
+}
+
+.impostazioni .sezione .lstOpzione .opzione .testo{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white);
+    padding: 5px 0 9px 0;
+    width: 100%;
+}
+
+.impostazioni .sezione .lstOpzione .opzione.rosso .testo{
+    color: #FF2C2C;
+}
+
+.impostazioni .sezione .lstOpzione .opzione:not(:last-child) .testo{
+    border-bottom: 1px solid var(--primary);
+}
