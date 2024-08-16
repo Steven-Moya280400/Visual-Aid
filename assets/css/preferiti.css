@@ -95,9 +95,21 @@
     width: 145px;
 }
 
+.Preferiti .lstUtenti .utenti .infoUtenti{
+    padding: 6px 0;
+}
+
 .Preferiti .lstUtenti .utenti .infoUtenti .nameUtenti {
     font-size: 20px;
     margin-bottom: 3px;
+}
+
+.Preferiti .lstUtenti .utenti .infoUtenti .nameUtenti.center {
+    padding-top: 14px;
+}
+
+.Preferiti .lstUtenti .utenti.active .infoUtenti .nameUtenti.center{
+    padding-top: 0;
 }
 
 .Preferiti .lstUtenti .utenti .infoUtenti .posizioneUtenti {
