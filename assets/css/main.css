@@ -19,6 +19,12 @@
     -webkit-focus-ring-color: rgba(0, 0, 0, 0);
 }
 
+a, button {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    border: none;
+}
+
 .container {
     padding: 0 42px;
     max-width: 428px;
