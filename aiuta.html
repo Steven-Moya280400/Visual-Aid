@@ -46,7 +46,7 @@
             <div class="container">
                 <section class="sono">
                     <div class="sonoContent">
-                        <p class="sonoDisponible">Sono disponible</p>
+                        <p class="sonoDisponible" id="testoSono">Sono disponible</p>
                         <div class="switch active" onclick="enableSono();" id="switchSono">
                             <span class="no">No</span>
                             <span class="si">Si</span>
@@ -422,9 +422,11 @@
 
         if (switchSono.classList.contains('active')) {
             switchSono.classList.remove('active');
+            document.getElementById('testoSono').innerText='Non sono disponibile'
         }
         else {
             switchSono.classList.add('active');
+            document.getElementById('testoSono').innerText='Sono disponibile'
         }
     }
 </script>
