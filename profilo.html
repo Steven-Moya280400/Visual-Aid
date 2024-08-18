@@ -22,10 +22,10 @@
     <header>
         <div class="container">
             <div class="headerContent">
-                <p class="title">Profilo</p>
+                <p class="titolo">Profilo</p>
                 <nav class="navHeader">
                     <ul class="navList">
-                        <li class="navItem">
+                        <li class="navArticolo">
                             <a href="#">
                                 <img src="assets/img/icons/dataUserIcon.svg" />
                             </a>
@@ -41,7 +41,7 @@
                 <section class="sono">
                     <div class="sonoContent">
                         <p class="sonoDisponible" id="testoSono">Sono disponible</p>
-                        <div class="switch active" onclick="enableSono();" id="switchSono">
+                        <div class="switch attivo" onclick="enableSono();" id="switchSono">
                             <span class="no">No</span>
                             <span class="si">Si</span>
                         </div>
@@ -49,7 +49,7 @@
                 </section>
 
                 <section class="profilo">
-                    <div class="informazioni">
+                    <div class="informazione">
                         <div class="fotoDelProfilo">
                             <div class="lvl">Lvl. 8</div>
                             <img src="assets/img/profilo/valerio.png" />
@@ -58,7 +58,7 @@
                         <p class="posizione">Aiutante Master</p>
                     </div>
 
-                    <div class="informazioniCarta">
+                    <div class="informazioneCarta">
                         <div class="titoloContenitore">
                             <p class="titolo">Disponibilità e orari</p>
                             <img class="freccia" src="assets/img/icons/freccia.svg">
@@ -69,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="informazioniCarta">
+                    <div class="informazioneCarta">
                         <div class="titoloContenitore">
                             <p class="titolo">Bacheca trofei</p>
                             <img class="freccia" src="assets/img/icons/freccia.svg">
@@ -93,19 +93,19 @@
                 <div class="activeEffect left"></div>
                 <nav class="navFooter">
                     <ul class="navList">
-                        <li class="navItem active">
+                        <li class="navArticolo attivo">
                             <a href="profilo.html">
                                 <img class="profilo-icon" src="assets/img/footer/profiloActive.svg" />
                                 <span>Profilo</span>
                             </a>
                         </li>
-                        <li class="navItem">
+                        <li class="navArticolo">
                             <a href="aiuta.html">
                                 <img class="aiuta-Icon" src="assets/img/footer/aiuta.svg" />
                                 <span>Aiuta</span>
                             </a>
                         </li>
-                        <li class="navItem">
+                        <li class="navArticolo">
                             <a href="impostazioni.html">
                                 <img class="impostazioni-Icon" src="assets/img/footer/impostazioni.svg" />
                                 <span>Impostazioni</span>
@@ -138,12 +138,12 @@
     function enableSono() {
         var switchSono = document.getElementById('switchSono');
 
-        if (switchSono.classList.contains('active')) {
-            switchSono.classList.remove('active');
+        if (switchSono.classList.contains('attivo')) {
+            switchSono.classList.remove('attivo');
             document.getElementById('testoSono').innerText='Non sono disponibile'
         }
         else {
-            switchSono.classList.add('active');
+            switchSono.classList.add('attivo');
             document.getElementById('testoSono').innerText='Sono disponibile'
         }
     }

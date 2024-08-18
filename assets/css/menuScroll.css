@@ -40,7 +40,7 @@ main{
     padding: 20px 0;
 }
 
-.menuScroll .menuContent .menu .menuItem{
+.menuScroll .menuContent .menu .menuArticolo{
     font-size: 40px;
     font-weight: 400;
     text-decoration: none;
@@ -48,10 +48,10 @@ main{
     color: var(--white);
 }
 
-.menuScroll .menuContent .menu .menuItem a{
+.menuScroll .menuContent .menu .menuArticolo a{
     color: var(--white);
 }
 
-.menuScroll .menuContent .menu .menuItem.active a{
+.menuScroll .menuContent .menu .menuArticolo.attivo a{
     color: var(--primary);
 }

@@ -56,9 +56,9 @@ function moveMenu(dir) {
         item = swipeMenu.querySelector('[data-position="' + pos + '"]')
     }
 
-    swipeMenu.querySelector('.menuItem.active').classList.remove('active');
+    swipeMenu.querySelector('.menuArticolo.attivo').classList.remove('attivo');
     swipeMenu.style.top = pos + 'px';
-    item.classList.add('active');
+    item.classList.add('attivo');
 
 }
 

@@ -2,18 +2,18 @@
     margin-top: 10px;
 }
 
-.profilo .informazioni {
+.profilo .informazione {
     display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center;
 }
 
-.profilo .informazioni .fotoDelProfilo{
+.profilo .informazione .fotoDelProfilo{
     position: relative;
 }
 
-.profilo .informazioni .fotoDelProfilo .lvl{
+.profilo .informazione .fotoDelProfilo .lvl{
     position: absolute;
     color: var(--white);
     background-color: #232323;
@@ -28,7 +28,7 @@
     box-shadow: inset 0.5px 1px 3px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
 }
 
-.profilo .informazioni .fotoDelProfilo img{
+.profilo .informazione .fotoDelProfilo img{
     height: 132px;
     width: 130px;
     border: 1px solid var(--primary);
@@ -36,7 +36,7 @@
     margin-bottom: 7px;
 }
 
-.profilo .informazioni .nome{
+.profilo .informazione .nome{
     color: var(--white);
     font-size: 38px;
     font-weight: 500;
@@ -44,7 +44,7 @@
     line-height: 38px;
 }
 
-.profilo .informazioni .posizione{
+.profilo .informazione .posizione{
     color: var(--white);
     font-size: 16px;
     font-weight: 300;
@@ -52,13 +52,13 @@
     margin-top: 5px;
 }
 
-.profilo .informazioniCarta{
+.profilo .informazioneCarta{
     margin-top: 25px;
     background-color: #232323;
     border-radius: 15px;
 }
 
-.profilo .informazioniCarta .titoloContenitore{
+.profilo .informazioneCarta .titoloContenitore{
     display: inline-flex;
     width: 100%;
     align-items: center;
@@ -67,19 +67,19 @@
     border-bottom: 1px solid var(--primary);
 }
 
-.profilo .informazioniCarta .titoloContenitore .titolo{
+.profilo .informazioneCarta .titoloContenitore .titolo{
     color: var(--white);
     font-size: 20px;
     font-weight: 300;
 }
 
-.profilo .informazioniCarta .contenuto {
+.profilo .informazioneCarta .contenuto {
     position: relative;
     overflow: hidden;
     padding: 24px 23px 0 23px;
 }
 
-.profilo .informazioniCarta .contenuto .ellipse{
+.profilo .informazioneCarta .contenuto .ellipse{
     position: absolute;
     height: 128px;
     width: 128px;
@@ -90,12 +90,12 @@
     top: -143px;
 }
 
-.profilo .informazioniCarta .contenuto .chart{
+.profilo .informazioneCarta .contenuto .chart{
     margin: 22px auto 37px auto;
     display: block;
 }
 
-.profilo .informazioniCarta .contenuto .trofei{
+.profilo .informazioneCarta .contenuto .trofei{
     display: inline-flex;
     width: 100%;
     align-items: flex-end;

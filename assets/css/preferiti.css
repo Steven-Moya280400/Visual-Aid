@@ -1,11 +1,11 @@
-.Preferiti .titlePreferitiContainer {
+.Preferiti .titoloPreferitiContainer {
     display: inline-flex;
     width: 100%;
     gap: 12px;
     margin-bottom: 15.7px;
 }
 
-.Preferiti .titlePreferitiContainer .titlePreferiti {
+.Preferiti .titoloPreferitiContainer .titoloPreferiti {
     color: var(--white);
     font-size: 30px;
     font-weight: 600;
@@ -39,7 +39,7 @@
     display: none;
 }
 
-.Preferiti .lstUtenti .utenti.active .visualAidPlus {
+.Preferiti .lstUtenti .utenti.attivo .visualAidPlus {
     display: block;
 }
 
@@ -56,7 +56,7 @@
 }
 
 
-.Preferiti .lstUtenti .utenti.active {
+.Preferiti .lstUtenti .utenti.attivo {
     height: 210px;
 }
 
@@ -90,7 +90,7 @@
     object-fit: cover;
 }
 
-.Preferiti .lstUtenti .utenti.active .imgUtenti {
+.Preferiti .lstUtenti .utenti.attivo .imgUtenti {
     height: 210px;
     width: 145px;
 }
@@ -108,7 +108,7 @@
     padding-top: 14px;
 }
 
-.Preferiti .lstUtenti .utenti.active .infoUtenti .nameUtenti.center{
+.Preferiti .lstUtenti .utenti.attivo .infoUtenti .nameUtenti.center{
     padding-top: 0;
 }
 
@@ -117,22 +117,22 @@
     color: var(--white);
 }
 
-.Preferiti .lstUtenti .utenti .infoUtenti .titleInfo {
+.Preferiti .lstUtenti .utenti .infoUtenti .titoloInfo {
     font-size: 12px;
     font-weight: 300;
     display: none;
     margin-top: 14px;
 }
 
-.Preferiti .lstUtenti .utenti.blu .infoUtenti .titleInfo {
+.Preferiti .lstUtenti .utenti.blu .infoUtenti .titoloInfo {
     color: var(--primary);
 }
 
-.Preferiti .lstUtenti .utenti.giallo .infoUtenti .titleInfo {
+.Preferiti .lstUtenti .utenti.giallo .infoUtenti .titoloInfo {
     color: #FFE70F
 }
 
-.Preferiti .lstUtenti .utenti.arancia .infoUtenti .titleInfo {
+.Preferiti .lstUtenti .utenti.arancia .infoUtenti .titoloInfo {
     color: #FF5C00;
 }
 
@@ -144,12 +144,12 @@
     position: relative;
 }
 
-.Preferiti .lstUtenti .utenti.active .infoUtenti .info,
-.Preferiti .lstUtenti .utenti.active .infoUtenti .titleInfo {
+.Preferiti .lstUtenti .utenti.attivo .infoUtenti .info,
+.Preferiti .lstUtenti .utenti.attivo .infoUtenti .titoloInfo {
     display: block;
 }
 
-.Preferiti .lstUtenti .utenti .infoUtenti .actions {
+.Preferiti .lstUtenti .utenti .infoUtenti .azioni {
     position: absolute;
     bottom: 13px;
     right: 29px;
@@ -161,11 +161,11 @@
     display: none;
 }
 
-.Preferiti .lstUtenti .utenti.active .infoUtenti .actions {
+.Preferiti .lstUtenti .utenti.attivo .infoUtenti .azioni {
     display: inline-flex;
 }
 
-.Preferiti .lstUtenti .utenti .infoUtenti .actions .action{
+.Preferiti .lstUtenti .utenti .infoUtenti .azioni .azione{
     width: 38px;
     height: 28px;
     background-color: #232323;
@@ -176,14 +176,14 @@
     border: none;
 }
 
-.Preferiti .lstUtenti .utenti.blu .infoUtenti .actions .action {
+.Preferiti .lstUtenti .utenti.blu .infoUtenti .azioni .azione {
     box-shadow: inset 0.5px 1px 3px 0px rgb(0 255 240 / 25%), 0 4px 4px 0px rgb(0 0 0 / 25%);
 }
 
-.Preferiti .lstUtenti .utenti.giallo .infoUtenti .actions .action {
+.Preferiti .lstUtenti .utenti.giallo .infoUtenti .azioni .azione {
     box-shadow: inset 0.5px 1px 3px 0px rgb(255 231 15 / 25%), 0 4px 4px 0px rgb(0 0 0 / 25%);
 }
 
-.Preferiti .lstUtenti .utenti.arancia .infoUtenti .actions .action {
+.Preferiti .lstUtenti .utenti.arancia .infoUtenti .azioni .azione {
     box-shadow: inset 0.5px 1px 3px 0px rgb(255 92 0 / 25%), 0 4px 4px 0px rgb(0 0 0 / 25%);
 }

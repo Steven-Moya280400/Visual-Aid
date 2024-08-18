@@ -40,13 +40,13 @@
     opacity: 0.4;
 }
 
-.sono .switch.active .no{
+.sono .switch.attivo .no{
     background-color: #575757;
     box-shadow: none;
     opacity: 0.4;
 }
 
-.sono .switch.active .si{
+.sono .switch.attivo .si{
     background-color: #00FFF0;
     box-shadow: 0px 0px 4px 0px #00FFF0;
     opacity: 1;

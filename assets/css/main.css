@@ -48,7 +48,7 @@ header {
     z-index: 100;
 }
 
-header .headerContent .title {
+header .headerContent .titolo {
     color: var(--primary);
     font-size: 20px;
     font-weight: 600;
@@ -135,29 +135,29 @@ footer .contentFooter .activeEffect.right {
     transform: translateX(-100%);
 }
 
-footer .contentFooter .navFooter .navItem {
+footer .contentFooter .navFooter .navArticolo {
     min-width: 80px;
 }
 
-footer .contentFooter .navFooter .navItem .profilo-icon {
+footer .contentFooter .navFooter .navArticolo .profilo-icon {
     height: 31px;
     width: 28px;
     object-fit: contain;
 }
 
-footer .contentFooter .navFooter .navItem .aiuta-Icon {
+footer .contentFooter .navFooter .navArticolo .aiuta-Icon {
     height: 42px;
     width: 38px;
     object-fit: contain;
 }
 
-footer .contentFooter .navFooter .navItem .impostazioni-Icon {
+footer .contentFooter .navFooter .navArticolo .impostazione-Icon {
     height: 33px;
     width: 33px;
     object-fit: contain;
 }
 
-footer .contentFooter .navFooter .navItem a {
+footer .contentFooter .navFooter .navArticolo a {
     color: #939393;
     font-size: 12px;
     font-weight: 400;
@@ -167,6 +167,6 @@ footer .contentFooter .navFooter .navItem a {
     align-items: center;
 }
 
-footer .contentFooter .navFooter .navItem.active a {
+footer .contentFooter .navFooter .navArticolo.attivo a {
     color: var(--white);
 }
