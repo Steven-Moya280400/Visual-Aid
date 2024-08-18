@@ -38,24 +38,8 @@
         </div>
     </main>
 </body>
-
 </html>
-<script src="assets/plugins/overlayscrollbars/browser/overlayscrollbars.browser.es5.min.js"></script>
 <script>
-    var {
-        OverlayScrollbars,
-        ScrollbarsHidingPlugin,
-        SizeObserverPlugin,
-        ClickScrollPlugin
-    } = OverlayScrollbarsGlobal;
-
-    document.addEventListener("DOMContentLoaded", () => {
-        Array.prototype.forEach.call(
-            document.querySelectorAll('body'),
-            (el) => OverlayScrollbars(el, {})
-        );
-    });
-
     function scansione() {
         let scansione = document.getElementById('scansione');
         if (!scansione.classList.contains('active')) {
