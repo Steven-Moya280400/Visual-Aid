@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <Title>Visual Aid</Title>
+        <link rel="icon" type="image/png" href="assets/img/logo.png" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/scan.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/plugins/overlayscrollbars/styles/overlayscrollbars.min.css">
+    </head>
+</head>
+
+<body>
+    <main>
+        <div class="mainContent">
+            <section class="scan">
+                <div class="scansione" id="scansione" onclick="scansione();">
+                    <p class="titolo">SCAN</p>
+                    <button class="cancellare" onclick="scansioneCancellare();">
+                        <img src="assets/img/scan/cancellare.svg">
+                    </button>
+                </div>
+
+                <div class="assistenza" id="assistenza" onclick="assistenza();">
+                    <p class="titolo">Chiama Assistenza</p>
+                    <button class="cancellare" onclick="assistenzaCancellare();">
+                        <img src="assets/img/scan/telefono.svg">
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
+<script src="assets/plugins/overlayscrollbars/browser/overlayscrollbars.browser.es5.min.js"></script>
+<script>
+    var {
+        OverlayScrollbars,
+        ScrollbarsHidingPlugin,
+        SizeObserverPlugin,
+        ClickScrollPlugin
+    } = OverlayScrollbarsGlobal;
+
+    document.addEventListener("DOMContentLoaded", () => {
+        Array.prototype.forEach.call(
+            document.querySelectorAll('body'),
+            (el) => OverlayScrollbars(el, {})
+        );
+    });
+
+    function scansione() {
+        let scansione = document.getElementById('scansione');
+        if (!scansione.classList.contains('active')) {
+            scansione.classList.add('active');
+        }
+    }
+    
+    function scansioneCancellare() {
+        let scansione = document.getElementById('scansione');
+        scansione.classList.remove('active');
+        event.stopPropagation();
+    }
+
+    function assistenza() {
+        let scansione = document.getElementById('scansione');
+        let assistenza = document.getElementById('assistenza');
+        if (!assistenza.classList.contains('active')) {
+            scansione.classList.add('assistenzaActive');
+            assistenza.classList.add('active');
+        }
+    }
+    
+    function assistenzaCancellare() {
+        let scansione = document.getElementById('scansione');
+        let assistenza = document.getElementById('assistenza');
+        scansione.classList.remove('assistenzaActive');
+        assistenza.classList.remove('active');
+        event.stopPropagation();
+    }
+</script>
