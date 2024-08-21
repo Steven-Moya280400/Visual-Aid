@@ -1,0 +1,252 @@
+main {
+    padding: 0;
+}
+
+.login .animation {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.login .animation .logo {
+    height: 223.3px;
+    width: 225.9px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    animation-name: animationLogo;
+    animation-duration: 1s;
+    transition: 1s;
+}
+
+.login .animation .cerchio {
+    height: 34.59px;
+    width: 34.59px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    border-radius: 50%;
+    z-index: 20;
+    animation-name: animationCerchio;
+    animation-duration: 1.5s;
+    transition: 1.5s;
+}
+
+.login .animation .ellisse {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0 255 240 / 70%);
+    border-radius: 50%;
+    filter: blur(15px);
+    opacity: 0;
+    animation-name: animationEllisse;
+    animation-duration: 1.5s;
+    transition: 1.5s;
+}
+
+.login .animation .ellisse2 {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00FFF0;
+    border-radius: 50%;
+    filter: blur(44px);
+    z-index: 2;
+    opacity: 0;
+    animation-name: animationEllisse;
+    animation-duration: 1.5s;
+    transition: 1.5s;
+}
+
+.login .animation .ellisse3 {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00FFF0;
+    border-radius: 50%;
+    filter: blur(70px);
+    z-index: 2;
+    opacity: 0;
+    animation-name: animationEllisse;
+    animation-duration: 1.5s;
+    transition: 1.5s;
+}
+
+.login .animation .nonVendenti {
+    position: absolute;
+    height: calc(50% - 10px);
+    width: calc(100% - 18.68px);
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 30px;
+    box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
+    animation: animationNonVendenti;
+    animation-duration: 3s;
+}
+
+.login .animation .nonVendenti .content{
+    background-image: url(../img/scan/sfondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    animation: animationNonVendentiContent;
+    animation-duration: 6s;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+
+.login .animation .nonVendenti .lineaNera {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 15px;
+    top: -1px;
+    transform: translateX(-50%);
+    background-color: var(--black);
+    animation: animationNonVendentiLineaNera;
+    animation-duration: 4s;
+    transition: 1.5s;
+}
+
+.login .animation .nonVendenti .roundBottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    height: 80px;
+    width: 80px;
+}
+
+.login .animation .nonVendenti .rondShadow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -19px;
+    background-color: var(--black);
+    height: 45px;
+    width: 52px;
+    box-shadow: 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
+    border-radius: 50% 50% 0 0;
+}
+
+.login .animation .nonVendenti .rondShadow::before {
+    width: 79px;
+    height: 36px;
+    background-color: var(--black);
+    position: absolute;
+    content: '';
+    bottom: -17px;
+    left: -15px;
+}
+
+@keyframes animationLogo {
+    0% {
+        height: 86px;
+        width: 87px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 223.3px;
+        width: 225.9px;
+        opacity: 0;
+    }
+}
+
+@keyframes animationCerchio {
+    0% {
+        height: 11.46px;
+        width: 11.46px;
+    }
+
+    100% {
+        height: 34.59px;
+        width: 34.59px;
+    }
+}
+
+@keyframes animationEllisse {
+    0% {
+        height: 67.79px;
+        width: 67.79px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes animationNonVendenti {
+    0% {
+        height: 15px;
+        width: 0;
+        border-radius: 0;
+    }
+
+    50% {
+        height: 15px;
+        width: calc(100% - 18.68px);
+        border-radius: 0 0 30px 30px;
+    }
+
+    100% {
+        border-radius: 30px;
+        height: calc(50% - 10px);
+        width: calc(100% - 18.68px);
+    }
+}
+
+@keyframes animationNonVendentiLineaNera {
+    0% {
+        width: 0;
+    }
+
+    10%{
+        width: 100%;
+    }
+    
+    70% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+
+@keyframes animationNonVendentiContent {
+    0% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
