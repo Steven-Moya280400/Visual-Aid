@@ -20,6 +20,7 @@ main {
     animation-name: animationLogo;
     animation-duration: 1s;
     transition: 1s;
+    pointer-events: none;
 }
 
 .login .animation .cerchio {
@@ -87,28 +88,41 @@ main {
     transition: 1.5s;
 }
 
+.login .blocchi {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    padding: 10px 9px;
+    gap: 10px;
+}
+
+.login .blocchi .bloccoAnimazione {
+    height: 100%;
+    position: relative;
+}
+
 .login .animation .nonVendenti {
     position: absolute;
-    height: calc(50% - 10px);
-    width: calc(100% - 18.68px);
+    height: 100%;
+    width: 100%;
+    bottom: 0;
     left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 0);
+    transform: translateX(-50%);
     border-radius: 30px;
     box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
     animation: animationNonVendenti;
-    animation-duration: 3s;
+    animation-duration: 6s;
 }
 
-.login .animation .nonVendenti .content{
+.login .animation .nonVendenti .contenuto {
     background-image: url(../img/scan/sfondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     opacity: 1;
-    animation: animationNonVendentiContent;
-    animation-duration: 6s;
+    animation: animationContent;
+    animation-duration: 10s;
     transition: 1s;
     border-radius: 30px;
 }
@@ -122,8 +136,8 @@ main {
     top: -1px;
     transform: translateX(-50%);
     background-color: var(--black);
-    animation: animationNonVendentiLineaNera;
-    animation-duration: 4s;
+    animation: animationLineaNera;
+    animation-duration: 7s;
     transition: 1.5s;
 }
 
@@ -134,9 +148,13 @@ main {
     bottom: 0;
     height: 80px;
     width: 80px;
+    opacity: 1;
+    overflow: hidden;
+    animation: animationRoundBottom;
+    animation-duration: 3s;
 }
 
-.login .animation .nonVendenti .rondShadow {
+.login .animation .nonVendenti .ombraRotonda {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -148,7 +166,7 @@ main {
     border-radius: 50% 50% 0 0;
 }
 
-.login .animation .nonVendenti .rondShadow::before {
+.login .animation .nonVendenti .ombraRotonda::before {
     width: 79px;
     height: 36px;
     background-color: var(--black);
@@ -157,6 +175,82 @@ main {
     bottom: -17px;
     left: -15px;
 }
+
+.login .animation .volantari {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
+    animation: animationVolantari;
+    animation-duration: 6s;
+}
+
+.login .animation .volantari .contenuto {
+    background-image: url(../img/scan/sfondo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    animation: animationContent;
+    animation-duration: 10s;
+    transition: 1s;
+    border-radius: 30px;
+}
+
+
+.login .animation .volantari .lineaNera {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    height: 15px;
+    bottom: -1px;
+    transform: translateX(-50%);
+    background-color: var(--black);
+    animation: animationLineaNera;
+    animation-duration: 7s;
+    transition: 1.5s;
+}
+
+.login .animation .volantari .roundBottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    height: 80px;
+    width: 80px;
+    opacity: 1;
+    overflow: hidden;
+    animation: animationRoundBottom;
+    animation-duration: 3s;
+}
+
+.login .animation .volantari .ombraRotonda {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -19px;
+    background-color: var(--black);
+    height: 45px;
+    width: 52px;
+    box-shadow: 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
+    border-radius: 0 0 50% 50%;
+}
+
+.login .animation .volantari .ombraRotonda::before {
+    width: 79px;
+    height: 36px;
+    background-color: var(--black);
+    position: absolute;
+    content: '';
+    top: -17px;
+    left: -15px;
+}
+
 
 @keyframes animationLogo {
     0% {
@@ -200,6 +294,12 @@ main {
 
 @keyframes animationNonVendenti {
     0% {
+        height: 0px;
+        width: 0;
+        border-radius: 0;
+    }
+
+    40% {
         height: 15px;
         width: 0;
         border-radius: 0;
@@ -207,27 +307,68 @@ main {
 
     50% {
         height: 15px;
-        width: calc(100% - 18.68px);
+        width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
+
+    100% {
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@keyframes animationVolantari {
+    0% {
+        height: 0px;
+        width: 0;
+        border-radius: 0;
+    }
+
+    40% {
+        height: 15px;
+        width: 0;
+        border-radius: 0;
+    }
+
+    50% {
+        height: 15px;
+        width: 100%;
         border-radius: 0 0 30px 30px;
     }
 
     100% {
         border-radius: 30px;
-        height: calc(50% - 10px);
-        width: calc(100% - 18.68px);
+        height: 100%;
+        width: 100%;
     }
 }
 
-@keyframes animationNonVendentiLineaNera {
+@keyframes animationRoundBottom {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes animationLineaNera {
     0% {
         width: 0;
     }
 
-    10%{
+    10% {
         width: 100%;
     }
-    
-    70% {
+
+    85% {
         width: 100%;
     }
 
@@ -237,7 +378,7 @@ main {
 }
 
 
-@keyframes animationNonVendentiContent {
+@keyframes animationContent {
     0% {
         opacity: 0;
     }
