@@ -21,6 +21,7 @@ main {
     animation-duration: 1s;
     transition: 1s;
     pointer-events: none;
+    z-index: 30;
 }
 
 .login .animation .cerchio {
@@ -39,35 +40,36 @@ main {
 }
 
 .login .animation .ellisse {
-    height: 0;
-    width: 0;
+    height: 67.79px;
+    width: 67.79px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(0 255 240 / 70%);
     border-radius: 50%;
-    filter: blur(15px);
-    opacity: 0;
+    filter: blur(34px);
+    opacity: 1;
+    z-index: 10;
     animation-name: animationEllisse;
-    animation-duration: 1.5s;
+    animation-duration: 4.5s;
     transition: 1.5s;
 }
 
 .login .animation .ellisse2 {
-    height: 0;
-    width: 0;
+    height: 67.79px;
+    width: 67.79px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #00FFF0;
     border-radius: 50%;
-    filter: blur(44px);
-    z-index: 2;
-    opacity: 0;
-    animation-name: animationEllisse;
-    animation-duration: 1.5s;
+    filter: blur(60px);
+    z-index: 11;
+    opacity: 1;
+    animation-name: animationEllisse2;
+    animation-duration: 4.5s;
     transition: 1.5s;
 }
 
@@ -81,9 +83,9 @@ main {
     background-color: #00FFF0;
     border-radius: 50%;
     filter: blur(70px);
-    z-index: 2;
+    z-index: 12;
     opacity: 0;
-    animation-name: animationEllisse;
+    animation-name: animationEllisse3;
     animation-duration: 1.5s;
     transition: 1.5s;
 }
@@ -111,7 +113,7 @@ main {
     border-radius: 30px;
     box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
     animation: animationNonVendenti;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 
 .login .animation .nonVendenti .contenuto {
@@ -122,7 +124,7 @@ main {
     height: 100%;
     opacity: 1;
     animation: animationContent;
-    animation-duration: 10s;
+    animation-duration: 6s;
     transition: 1s;
     border-radius: 30px;
 }
@@ -137,7 +139,7 @@ main {
     transform: translateX(-50%);
     background-color: var(--black);
     animation: animationLineaNera;
-    animation-duration: 7s;
+    animation-duration: 4.5s;
     transition: 1.5s;
 }
 
@@ -151,7 +153,7 @@ main {
     opacity: 1;
     overflow: hidden;
     animation: animationRoundBottom;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .login .animation .nonVendenti .ombraRotonda {
@@ -186,7 +188,7 @@ main {
     border-radius: 30px;
     box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
     animation: animationVolantari;
-    animation-duration: 6s;
+    animation-duration: 4s;
 }
 
 .login .animation .volantari .contenuto {
@@ -197,7 +199,7 @@ main {
     height: 100%;
     opacity: 1;
     animation: animationContent;
-    animation-duration: 10s;
+    animation-duration: 6s;
     transition: 1s;
     border-radius: 30px;
 }
@@ -212,7 +214,7 @@ main {
     transform: translateX(-50%);
     background-color: var(--black);
     animation: animationLineaNera;
-    animation-duration: 7s;
+    animation-duration: 4.5s;
     transition: 1.5s;
 }
 
@@ -226,7 +228,7 @@ main {
     opacity: 1;
     overflow: hidden;
     animation: animationRoundBottom;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 
 .login .animation .volantari .ombraRotonda {
@@ -283,6 +285,66 @@ main {
         height: 67.79px;
         width: 67.79px;
         opacity: 1;
+        filter: blur(15px);
+    }
+
+    10% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        filter: blur(15px);
+    }
+
+    80%{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        filter: blur(34px);
+    }
+
+    100%{
+        height: 67.79px;
+        width: 67.79px;
+        opacity: 1;
+        filter: blur(34px);
+    }
+}
+
+@keyframes animationEllisse2 {
+    0% {
+        height: 67.79px;
+        width: 67.79px;
+        opacity: 1;
+        filter: blur(44px);
+    }
+
+    10% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        filter: blur(44px);
+    }
+
+    80%{
+        height: 0;
+        width: 0;
+        opacity: 0;
+        filter: blur(60px);
+    }
+
+    100%{
+        height: 67.79px;
+        width: 67.79px;
+        opacity: 1;
+        filter: blur(60px);
+    }
+}
+
+@keyframes animationEllisse3 {
+    0% {
+        height: 67.79px;
+        width: 67.79px;
+        opacity: 1;
     }
 
     100% {
@@ -296,23 +358,19 @@ main {
     0% {
         height: 0px;
         width: 0;
-        border-radius: 0;
     }
 
     40% {
         height: 15px;
         width: 0;
-        border-radius: 0;
     }
 
     50% {
         height: 15px;
         width: 100%;
-        border-radius: 30px 30px 0 0;
     }
 
     100% {
-        border-radius: 30px;
         height: 100%;
         width: 100%;
     }
@@ -322,23 +380,19 @@ main {
     0% {
         height: 0px;
         width: 0;
-        border-radius: 0;
     }
 
     40% {
         height: 15px;
         width: 0;
-        border-radius: 0;
     }
 
     50% {
         height: 15px;
         width: 100%;
-        border-radius: 0 0 30px 30px;
     }
 
     100% {
-        border-radius: 30px;
         height: 100%;
         width: 100%;
     }
