@@ -20,7 +20,7 @@
 <body>
     <main>
         <div class="mainContent">
-            <section class="scan">
+            <section class="scan" onclick="redirectToMenu()">
                 <div class="scansione" id="scansione" onclick="scansione();">
                     <p class="titolo">SCAN</p>
                     <button class="cancellare" onclick="scansioneCancellare();">
@@ -38,6 +38,7 @@
         </div>
     </main>
 </body>
+
 </html>
 <script>
     function scansione() {
@@ -45,8 +46,9 @@
         if (!scansione.classList.contains('active')) {
             scansione.classList.add('active');
         }
+        event.stopPropagation();
     }
-    
+
     function scansioneCancellare() {
         let scansione = document.getElementById('scansione');
         scansione.classList.remove('active');
@@ -60,13 +62,35 @@
             scansione.classList.add('assistenzaActive');
             assistenza.classList.add('active');
         }
+        event.stopPropagation();
     }
-    
+
     function assistenzaCancellare() {
         let scansione = document.getElementById('scansione');
         let assistenza = document.getElementById('assistenza');
         scansione.classList.remove('assistenzaActive');
         assistenza.classList.remove('active');
         event.stopPropagation();
+    }
+
+    function redirectToMenu(){
+        window.location.href = "menuScroll.html";
+    }
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const azione = urlParams.get('azione');
+
+    if (azione != null && azione != undefined) {
+        if (azione == 'scansione') {
+            setTimeout(() => {
+                scansione();
+            }, 200);
+
+        }
+        else {
+            setTimeout(() => {
+                assistenza();
+            }, 200);
+        }
     }
 </script>

@@ -1,0 +1,493 @@
+main {
+    padding: 0;
+}
+
+body.nonVendentiPasso1 {
+    background-color: #1B4840;
+}
+
+.nonVendenti {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nonVendenti .contenuto .logoContenitore {
+    margin-bottom: 29px;
+    position: relative;
+}
+
+.nonVendenti .contenuto .logoContenitore .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.nonVendenti .contenuto .logoContenitore .cerchio {
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 2px);
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--white);
+    z-index: 10;
+}
+
+.nonVendenti .contenuto .logoContenitore .ellisse{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 2px);
+    transform: translate(-50%, -50%);
+    height: 128.79px;
+    width: 128.79px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    filter: blur(60px);
+}
+
+.nonVendenti .contenuto .logoContenitore .ellisse2{
+    position: absolute;
+    left: 50%;
+    top: calc(50% - 2px);
+    transform: translate(-50%, -50%);
+    height: 410.36px;
+    width: 410.36px;
+    border-radius: 50%;
+    background-color: rgb(0 255 240 / 40%);
+    filter: blur(60px);
+}
+
+.nonVendenti .contenuto .testo {
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--white);
+    max-width: 371px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 29px;
+    position: relative;
+    z-index: 10;
+}
+
+.nonVendenti .contenuto .animazione {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 17px;
+    height: 104px;
+    position: relative;
+    z-index: 10;
+}
+
+.nonVendenti .contenuto .animazione .lineaAnimazione{
+    width: 2px;
+    background-color: var(--white);
+    border-radius: 2px;
+}
+
+.nonVendenti .contenuto .animazione .linea1{
+    height: 36px;
+    animation: animationLinea1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea2{
+    height: 59px;
+    animation: animationLinea2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea3{
+    height: 80px;
+    animation: animationLinea3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea4{
+    height: 32px;
+    animation: animationLinea4;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea5{
+    height: 48px;
+    animation: animationLinea5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea6{
+    height: 59px;
+    animation: animationLinea6;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea7{
+    height: 88px;
+    animation: animationLinea7;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea8{
+    height: 59px;
+    animation: animationLinea8;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea9{
+    height: 104px;
+    animation: animationLinea9;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea10{
+    height: 53px;
+    animation: animationLinea10;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea11{
+    height: 36px;
+    animation: animationLinea11;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea12{
+    height: 104px;
+    animation: animationLinea12;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea13{
+    height: 87px;
+    animation: animationLinea13;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea14{
+    height: 48px;
+    animation: animationLinea14;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea15{
+    height: 65px;
+    animation: animationLinea15;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.nonVendenti .contenuto .animazione .linea16{
+    height: 97px;
+    animation: animationLinea16;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animationLinea1 {
+    0% {
+        height: 36px;
+    }
+
+    25%{
+        height: 7px;
+    }
+
+    50% {
+        height: 65px
+    }
+
+    100% {
+        height: 36px
+    }
+}
+
+@keyframes animationLinea2 {
+    0% {
+        height: 59px;
+    }
+
+    25%{
+        height: 59px;
+    }
+
+    50% {
+        height: 22px
+    }
+
+    100% {
+        height: 59px
+    }
+}
+
+@keyframes animationLinea3 {
+    0% {
+        height: 80px;
+    }
+
+    25%{
+        height: 25px;
+    }
+
+    50% {
+        height: 39px
+    }
+
+    100% {
+        height: 80px
+    }
+}
+
+@keyframes animationLinea4 {
+    0% {
+        height: 32px;
+    }
+
+    25%{
+        height: 53px;
+    }
+
+    50% {
+        height: 82px
+    }
+
+    100% {
+        height: 32px
+    }
+}
+
+@keyframes animationLinea5 {
+    0% {
+        height: 48px;
+    }
+
+    25%{
+        height: 14px;
+    }
+
+    50% {
+        height: 48px
+    }
+
+    100% {
+        height: 48px
+    }
+}
+
+@keyframes animationLinea6 {
+    0% {
+        height: 59px;
+    }
+
+    25%{
+        height: 74px;
+    }
+
+    50% {
+        height: 39px
+    }
+
+    100% {
+        height: 59px
+    }
+}
+
+@keyframes animationLinea7 {
+    0% {
+        height: 88px;
+    }
+
+    25%{
+        height: 48px;
+    }
+
+    50% {
+        height: 10px
+    }
+
+    100% {
+        height: 88px
+    }
+}
+
+@keyframes animationLinea8 {
+    0% {
+        height: 59px;
+    }
+
+    25%{
+        height: 25px;
+    }
+
+    50% {
+        height: 65px
+    }
+
+    100% {
+        height: 59px
+    }
+}
+
+@keyframes animationLinea9 {
+    0% {
+        height: 104px;
+    }
+
+    25%{
+        height: 44px;
+    }
+
+    50% {
+        height: 26px
+    }
+
+    100% {
+        height: 104px
+    }
+}
+
+@keyframes animationLinea10 {
+    0% {
+        height: 53px;
+    }
+
+    25%{
+        height: 74px;
+    }
+
+    50% {
+        height: 48px
+    }
+
+    100% {
+        height: 53px
+    }
+}
+
+@keyframes animationLinea11 {
+    0% {
+        height: 36px;
+    }
+
+    25%{
+        height: 59px;
+    }
+
+    50% {
+        height: 78px
+    }
+
+    100% {
+        height: 36px
+    }
+}
+
+@keyframes animationLinea12 {
+    0% {
+        height: 104px;
+    }
+
+    25%{
+        height: 36px;
+    }
+
+    50% {
+        height: 61px
+    }
+
+    100% {
+        height: 104px
+    }
+}
+
+@keyframes animationLinea13 {
+    0% {
+        height: 87px;
+    }
+
+    25%{
+        height: 10px;
+    }
+
+    50% {
+        height: 35px
+    }
+
+    100% {
+        height: 87px
+    }
+}
+
+@keyframes animationLinea14 {
+    0% {
+        height: 48px;
+    }
+
+    25%{
+        height: 88px;
+    }
+
+    50% {
+        height: 20px
+    }
+
+    100% {
+        height: 48px
+    }
+}
+
+@keyframes animationLinea15 {
+    0% {
+        height: 65px;
+    }
+
+    25%{
+        height: 44px;
+    }
+
+    50% {
+        height: 73px
+    }
+
+    100% {
+        height: 65px
+    }
+}
+
+@keyframes animationLinea16 {
+    0% {
+        height: 97px;
+    }
+
+    25%{
+        height: 22px;
+    }
+
+    50% {
+        height: 53px
+    }
+
+    100% {
+        height: 97px
+    }
+}
