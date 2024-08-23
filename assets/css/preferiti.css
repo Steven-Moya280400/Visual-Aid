@@ -64,7 +64,7 @@
     box-shadow: inset 11px -10px 14px 3px rgb(0 255 240 / 36%);
 }
 
-.Preferiti .lstUtenti .utenti.giallo .infoUtenti .nameUtenti {
+.Preferiti .lstUtenti .utenti.giallo .infoUtenti .nomeUtenti {
     color: #FFE70F;
 }
 
@@ -72,7 +72,7 @@
     box-shadow: inset 11px -10px 14px 3px rgb(255 231 15 / 36%);
 }
 
-.Preferiti .lstUtenti .utenti.arancia .infoUtenti .nameUtenti {
+.Preferiti .lstUtenti .utenti.arancia .infoUtenti .nomeUtenti {
     color: #FF5C00;
 }
 
@@ -80,7 +80,7 @@
     box-shadow: inset 11px -10px 14px 3px rgb(255 92 0 / 36%);
 }
 
-.Preferiti .lstUtenti .utenti.blu .infoUtenti .nameUtenti {
+.Preferiti .lstUtenti .utenti.blu .infoUtenti .nomeUtenti {
     color: var(--primary);
 }
 
@@ -99,16 +99,16 @@
     padding: 6px 0;
 }
 
-.Preferiti .lstUtenti .utenti .infoUtenti .nameUtenti {
+.Preferiti .lstUtenti .utenti .infoUtenti .nomeUtenti {
     font-size: 20px;
     margin-bottom: 3px;
 }
 
-.Preferiti .lstUtenti .utenti .infoUtenti .nameUtenti.center {
+.Preferiti .lstUtenti .utenti .infoUtenti .nomeUtenti.center {
     padding-top: 14px;
 }
 
-.Preferiti .lstUtenti .utenti.attivo .infoUtenti .nameUtenti.center{
+.Preferiti .lstUtenti .utenti.attivo .infoUtenti .nomeUtenti.center{
     padding-top: 0;
 }
 
