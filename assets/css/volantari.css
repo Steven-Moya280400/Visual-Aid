@@ -13,6 +13,7 @@ body.volantariBody {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 16px;
 }
 
 .volantari .contenuto .logoContenitore {
@@ -63,7 +64,8 @@ body.volantariBody {
 
 .volantari .contenuto .lstLogins a {
     height: 54px;
-    width: 345px;
+    max-width: 345px;
+    width: 100%;
     border-radius: 15px;
     display: block;
     overflow: hidden;

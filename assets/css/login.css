@@ -2,14 +2,14 @@ main {
     padding: 0;
 }
 
-.login .animation {
+.login .animazione {
     height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.login .animation .logo {
+.login .animazione .logo {
     height: 223.3px;
     width: 225.9px;
     position: absolute;
@@ -18,14 +18,14 @@ main {
     transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-    animation-name: animationLogo;
+    animation-name: animazioneLogo;
     animation-duration: 1s;
     transition: 1s;
     pointer-events: none;
     z-index: 30;
 }
 
-.login .animation .cerchio {
+.login .animazione .cerchio {
     height: 34.59px;
     width: 34.59px;
     position: absolute;
@@ -35,12 +35,12 @@ main {
     background-color: var(--white);
     border-radius: 50%;
     z-index: 20;
-    animation-name: animationCerchio;
+    animation-name: animazioneCerchio;
     animation-duration: 1.5s;
     transition: 1.5s;
 }
 
-.login .animation .ellisse {
+.login .animazione .ellisse {
     height: 67.79px;
     width: 67.79px;
     position: absolute;
@@ -52,12 +52,12 @@ main {
     filter: blur(34px);
     opacity: 1;
     z-index: 10;
-    animation-name: animationEllisse;
+    animation-name: animazioneEllisse;
     animation-duration: 4.5s;
     transition: 1.5s;
 }
 
-.login .animation .ellisse2 {
+.login .animazione .ellisse2 {
     height: 67.79px;
     width: 67.79px;
     position: absolute;
@@ -69,12 +69,12 @@ main {
     filter: blur(60px);
     z-index: 11;
     opacity: 1;
-    animation-name: animationEllisse2;
+    animation-name: animazioneEllisse2;
     animation-duration: 4.5s;
     transition: 1.5s;
 }
 
-.login .animation .ellisse3 {
+.login .animazione .ellisse3 {
     height: 0;
     width: 0;
     position: absolute;
@@ -86,7 +86,7 @@ main {
     filter: blur(70px);
     z-index: 12;
     opacity: 0;
-    animation-name: animationEllisse3;
+    animation-name: animazioneEllisse3;
     animation-duration: 1.5s;
     transition: 1.5s;
 }
@@ -104,7 +104,7 @@ main {
     position: relative;
 }
 
-.login .animation .nonVendenti {
+.login .animazione .nonVendenti {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -113,24 +113,24 @@ main {
     transform: translateX(-50%);
     border-radius: 30px;
     box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
-    animation: animationNonVendenti;
+    animation: animazioneNonVendenti;
     animation-duration: 4s;
 }
 
-.login .animation .nonVendenti .contenuto {
+.login .animazione .nonVendenti .contenuto {
     background-image: url(../img/scan/sfondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     opacity: 1;
-    animation: animationContent;
+    animation: animazioneContent;
     animation-duration: 6s;
     transition: 1s;
     border-radius: 30px;
 }
 
-.login .animation .nonVendenti .contenuto .info {
+.login .animazione .nonVendenti .contenuto .info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -139,13 +139,13 @@ main {
     text-align: center;
 }
 
-.login .animation .nonVendenti .contenuto .info .titolo {
+.login .animazione .nonVendenti .contenuto .info .titolo {
     font-size: 45px;
     font-weight: 700;
     color: var(--white);
 }
 
-.login .animation .nonVendenti .lineaNera {
+.login .animazione .nonVendenti .lineaNera {
     position: absolute;
     width: 0;
     left: 50%;
@@ -153,12 +153,12 @@ main {
     top: -1px;
     transform: translateX(-50%);
     background-color: var(--black);
-    animation: animationLineaNera;
+    animation: animazioneLineaNera;
     animation-duration: 4.5s;
     transition: 1.5s;
 }
 
-.login .animation .nonVendenti .roundBottom {
+.login .animazione .nonVendenti .roundBottom {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -167,11 +167,11 @@ main {
     width: 80px;
     opacity: 1;
     overflow: hidden;
-    animation: animationRoundBottom;
+    animation: animazioneRoundBottom;
     animation-duration: 2s;
 }
 
-.login .animation .nonVendenti .ombraRotonda {
+.login .animazione .nonVendenti .ombraRotonda {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -183,7 +183,7 @@ main {
     border-radius: 50% 50% 0 0;
 }
 
-.login .animation .nonVendenti .ombraRotonda::before {
+.login .animazione .nonVendenti .ombraRotonda::before {
     width: 79px;
     height: 36px;
     background-color: var(--black);
@@ -193,7 +193,7 @@ main {
     left: -15px;
 }
 
-.login .animation .volantari {
+.login .animazione .volantari {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -202,24 +202,24 @@ main {
     transform: translateX(-50%);
     border-radius: 30px;
     box-shadow: inset 0 1px 11.4px 0px rgb(0 255 240), 0 4px 4px 0px rgb(0 0 0 / 25%);
-    animation: animationVolantari;
+    animation: animazioneVolantari;
     animation-duration: 4s;
 }
 
-.login .animation .volantari .contenuto {
+.login .animazione .volantari .contenuto {
     background-image: url(../img/scan/sfondo.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100%;
     opacity: 1;
-    animation: animationContent;
+    animation: animazioneContent;
     animation-duration: 6s;
     transition: 1s;
     border-radius: 30px;
 }
 
-.login .animation .volantari .contenuto .info {
+.login .animazione .volantari .contenuto .info {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -228,14 +228,14 @@ main {
     text-align: center;
 }
 
-.login .animation .volantari .contenuto .info .titolo {
+.login .animazione .volantari .contenuto .info .titolo {
     font-size: 45px;
     font-weight: 700;
     color: var(--white);
 }
 
 
-.login .animation .volantari .lineaNera {
+.login .animazione .volantari .lineaNera {
     position: absolute;
     width: 0;
     left: 50%;
@@ -243,12 +243,12 @@ main {
     bottom: -1px;
     transform: translateX(-50%);
     background-color: var(--black);
-    animation: animationLineaNera;
+    animation: animazioneLineaNera;
     animation-duration: 4.5s;
     transition: 1.5s;
 }
 
-.login .animation .volantari .roundBottom {
+.login .animazione .volantari .roundBottom {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -257,11 +257,11 @@ main {
     width: 80px;
     opacity: 1;
     overflow: hidden;
-    animation: animationRoundBottom;
+    animation: animazioneRoundBottom;
     animation-duration: 2s;
 }
 
-.login .animation .volantari .ombraRotonda {
+.login .animazione .volantari .ombraRotonda {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -273,7 +273,7 @@ main {
     border-radius: 0 0 50% 50%;
 }
 
-.login .animation .volantari .ombraRotonda::before {
+.login .animazione .volantari .ombraRotonda::before {
     width: 79px;
     height: 36px;
     background-color: var(--black);
@@ -284,7 +284,7 @@ main {
 }
 
 
-@keyframes animationLogo {
+@keyframes animazioneLogo {
     0% {
         height: 86px;
         width: 87px;
@@ -298,7 +298,7 @@ main {
     }
 }
 
-@keyframes animationCerchio {
+@keyframes animazioneCerchio {
     0% {
         height: 11.46px;
         width: 11.46px;
@@ -310,7 +310,7 @@ main {
     }
 }
 
-@keyframes animationEllisse {
+@keyframes animazioneEllisse {
     0% {
         height: 67.79px;
         width: 67.79px;
@@ -340,7 +340,7 @@ main {
     }
 }
 
-@keyframes animationEllisse2 {
+@keyframes animazioneEllisse2 {
     0% {
         height: 67.79px;
         width: 67.79px;
@@ -370,7 +370,7 @@ main {
     }
 }
 
-@keyframes animationEllisse3 {
+@keyframes animazioneEllisse3 {
     0% {
         height: 67.79px;
         width: 67.79px;
@@ -384,7 +384,7 @@ main {
     }
 }
 
-@keyframes animationNonVendenti {
+@keyframes animazioneNonVendenti {
     0% {
         height: 0px;
         width: 0;
@@ -406,7 +406,7 @@ main {
     }
 }
 
-@keyframes animationVolantari {
+@keyframes animazioneVolantari {
     0% {
         height: 0px;
         width: 0;
@@ -428,7 +428,7 @@ main {
     }
 }
 
-@keyframes animationRoundBottom {
+@keyframes animazioneRoundBottom {
     0% {
         opacity: 0;
     }
@@ -443,7 +443,7 @@ main {
 }
 
 
-@keyframes animationLineaNera {
+@keyframes animazioneLineaNera {
     0% {
         width: 0;
     }
@@ -462,7 +462,7 @@ main {
 }
 
 
-@keyframes animationContent {
+@keyframes animazioneContent {
     0% {
         opacity: 0;
     }

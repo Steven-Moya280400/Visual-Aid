@@ -94,117 +94,117 @@ body.nonVendentiPasso1 {
 
 .nonVendenti .contenuto .animazione .linea1{
     height: 36px;
-    animation: animationLinea1;
+    animation: animazioneLinea1;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea2{
     height: 59px;
-    animation: animationLinea2;
+    animation: animazioneLinea2;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea3{
     height: 80px;
-    animation: animationLinea3;
+    animation: animazioneLinea3;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea4{
     height: 32px;
-    animation: animationLinea4;
+    animation: animazioneLinea4;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea5{
     height: 48px;
-    animation: animationLinea5;
+    animation: animazioneLinea5;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea6{
     height: 59px;
-    animation: animationLinea6;
+    animation: animazioneLinea6;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea7{
     height: 88px;
-    animation: animationLinea7;
+    animation: animazioneLinea7;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea8{
     height: 59px;
-    animation: animationLinea8;
+    animation: animazioneLinea8;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea9{
     height: 104px;
-    animation: animationLinea9;
+    animation: animazioneLinea9;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea10{
     height: 53px;
-    animation: animationLinea10;
+    animation: animazioneLinea10;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea11{
     height: 36px;
-    animation: animationLinea11;
+    animation: animazioneLinea11;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea12{
     height: 104px;
-    animation: animationLinea12;
+    animation: animazioneLinea12;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea13{
     height: 87px;
-    animation: animationLinea13;
+    animation: animazioneLinea13;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea14{
     height: 48px;
-    animation: animationLinea14;
+    animation: animazioneLinea14;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea15{
     height: 65px;
-    animation: animationLinea15;
+    animation: animazioneLinea15;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
 .nonVendenti .contenuto .animazione .linea16{
     height: 97px;
-    animation: animationLinea16;
+    animation: animazioneLinea16;
     animation-duration: 3s;
     animation-iteration-count: infinite;
 }
 
-@keyframes animationLinea1 {
+@keyframes animazioneLinea1 {
     0% {
         height: 36px;
     }
@@ -222,7 +222,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea2 {
+@keyframes animazioneLinea2 {
     0% {
         height: 59px;
     }
@@ -240,7 +240,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea3 {
+@keyframes animazioneLinea3 {
     0% {
         height: 80px;
     }
@@ -258,7 +258,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea4 {
+@keyframes animazioneLinea4 {
     0% {
         height: 32px;
     }
@@ -276,7 +276,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea5 {
+@keyframes animazioneLinea5 {
     0% {
         height: 48px;
     }
@@ -294,7 +294,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea6 {
+@keyframes animazioneLinea6 {
     0% {
         height: 59px;
     }
@@ -312,7 +312,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea7 {
+@keyframes animazioneLinea7 {
     0% {
         height: 88px;
     }
@@ -330,7 +330,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea8 {
+@keyframes animazioneLinea8 {
     0% {
         height: 59px;
     }
@@ -348,7 +348,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea9 {
+@keyframes animazioneLinea9 {
     0% {
         height: 104px;
     }
@@ -366,7 +366,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea10 {
+@keyframes animazioneLinea10 {
     0% {
         height: 53px;
     }
@@ -384,7 +384,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea11 {
+@keyframes animazioneLinea11 {
     0% {
         height: 36px;
     }
@@ -402,7 +402,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea12 {
+@keyframes animazioneLinea12 {
     0% {
         height: 104px;
     }
@@ -420,7 +420,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea13 {
+@keyframes animazioneLinea13 {
     0% {
         height: 87px;
     }
@@ -438,7 +438,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea14 {
+@keyframes animazioneLinea14 {
     0% {
         height: 48px;
     }
@@ -456,7 +456,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea15 {
+@keyframes animazioneLinea15 {
     0% {
         height: 65px;
     }
@@ -474,7 +474,7 @@ body.nonVendentiPasso1 {
     }
 }
 
-@keyframes animationLinea16 {
+@keyframes animazioneLinea16 {
     0% {
         height: 97px;
     }

@@ -9,7 +9,7 @@ main{
     position: relative;
 }
 
-.menuScroll .gradient{
+.menuScroll .pendenza{
     position: absolute;
     top: 0;
     height: 100vh;
@@ -20,13 +20,13 @@ main{
     z-index: 10;
 }
 
-.menuScroll .menuContent{
+.menuScroll .menuContenuto{
     max-height: 246px;
     width: 100%;
     overflow: hidden;
 }
 
-.menuScroll .menuContent .menu{
+.menuScroll .menuContenuto .menu{
     list-style: none;
     display: flex;
     gap: 27px;
@@ -40,7 +40,7 @@ main{
     padding: 20px 0;
 }
 
-.menuScroll .menuContent .menu .menuArticolo{
+.menuScroll .menuContenuto .menu .menuArticolo{
     font-size: 40px;
     font-weight: 400;
     text-decoration: none;
@@ -48,10 +48,10 @@ main{
     color: var(--white);
 }
 
-.menuScroll .menuContent .menu .menuArticolo a{
+.menuScroll .menuContenuto .menu .menuArticolo a{
     color: var(--white);
 }
 
-.menuScroll .menuContent .menu .menuArticolo.attivo a{
+.menuScroll .menuContenuto .menu .menuArticolo.attivo a{
     color: var(--primary);
 }
