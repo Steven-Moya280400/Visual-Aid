@@ -35,7 +35,7 @@ body.nonVendentiPasso1 {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--bianco);
     z-index: 10;
 }
 
@@ -47,7 +47,7 @@ body.nonVendentiPasso1 {
     height: 128.79px;
     width: 128.79px;
     border-radius: 50%;
-    background-color: var(--primary);
+    background-color: var(--primario);
     filter: blur(60px);
 }
 
@@ -66,7 +66,7 @@ body.nonVendentiPasso1 {
 .nonVendenti .contenuto .testo {
     font-size: 32px;
     font-weight: 400;
-    color: var(--white);
+    color: var(--bianco);
     max-width: 371px;
     width: 100%;
     text-align: center;
@@ -88,7 +88,7 @@ body.nonVendentiPasso1 {
 
 .nonVendenti .contenuto .animazione .lineaAnimazione{
     width: 2px;
-    background-color: var(--white);
+    background-color: var(--bianco);
     border-radius: 2px;
 }
 

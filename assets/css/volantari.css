@@ -36,7 +36,7 @@ body.volantariBody {
     height: 10px;
     width: 10px;
     border-radius: 50%;
-    background-color: var(--white);
+    background-color: var(--bianco);
     z-index: 10;
 }
 
@@ -48,7 +48,7 @@ body.volantariBody {
     height: 128.79px;
     width: 128.79px;
     border-radius: 50%;
-    background-color: var(--primary);
+    background-color: var(--primario);
     filter: blur(60px);
 }
 

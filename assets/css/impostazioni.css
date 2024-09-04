@@ -1,5 +1,5 @@
 .impostazioni .passaVisualAid {
-    color: var(--primary);
+    color: var(--primario);
     background-color: #232323;
     font-size: 16px;
     font-weight: 200;
@@ -14,7 +14,7 @@
 .impostazioni .sezione .titolo {
     font-size: 30px;
     font-weight: 500;
-    color: var(--white);
+    color: var(--bianco);
     margin-bottom: 5.5px;
 }
 
@@ -41,7 +41,7 @@
 .impostazioni .sezione .lstOpzione .opzione .testo{
     font-size: 20px;
     font-weight: 300;
-    color: var(--white);
+    color: var(--bianco);
     padding: 5px 0 9px 0;
     width: 100%;
 }
@@ -51,5 +51,5 @@
 }
 
 .impostazioni .sezione .lstOpzione .opzione:not(:last-child) .testo{
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primario);
 }

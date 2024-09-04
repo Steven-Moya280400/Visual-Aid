@@ -45,13 +45,13 @@ main{
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;
-    color: var(--white);
+    color: var(--bianco);
 }
 
 .menuScroll .menuContenuto .menu .menuArticolo a{
-    color: var(--white);
+    color: var(--bianco);
 }
 
 .menuScroll .menuContenuto .menu .menuArticolo.attivo a{
-    color: var(--primary);
+    color: var(--primario);
 }

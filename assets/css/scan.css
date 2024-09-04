@@ -35,7 +35,7 @@ main {
 
 .scan .scansione .titolo {
     font-size: 96px;
-    color: var(--white);
+    color: var(--bianco);
     text-transform: uppercase;
     text-align: center;
     position: absolute;
@@ -98,7 +98,7 @@ main {
 
 .scan .assistenza .titolo {
     font-size: 40px;
-    color: var(--white);
+    color: var(--bianco);
     text-transform: uppercase;
     text-align: center;
     position: absolute;

@@ -6,7 +6,7 @@
 }
 
 .aiutati .titoloContainer .titolo {
-    color: var(--white);
+    color: var(--bianco);
     font-size: 30px;
     font-weight: 600;
 }
@@ -22,7 +22,7 @@
     justify-content: space-between;
     width: 100%;
     padding: 8px 31px 11px 0;
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primario);
     position: relative;
 }
 
@@ -37,13 +37,13 @@
 }
 
 .aiutati .lstUser .utente .nome {
-    color: var(--primary);
+    color: var(--primario);
     font-size: 16px;
     margin-bottom: 6px;
 }
 
 .aiutati .lstUser .utente .data {
-    color: var(--white);
+    color: var(--bianco);
     font-size: 16px;
     font-weight: 200;
 }
